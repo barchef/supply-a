@@ -22,6 +22,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 // app.use('/', indexRouter);
 // app.use('/users', usersRouter);
 
+// return hardcoded PLS supply for now
+// at a future date, need to traverse the chain
+// to compute this value in real time
 app.get('/', (req, res) => res.send('14814814814815'))
 
 // catch 404 and forward to error handler
